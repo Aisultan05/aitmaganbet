@@ -1,0 +1,73 @@
+@import 'variables';
+
+// Импорт Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Задний фон
+body {
+  background-color: #010409;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+// Шапка
+header {
+  background-color: #010409;
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+// Футер
+footer {
+  background-color: #010409;
+  color: white;
+  padding: 16px 0;
+  text-align: center;
+
+  a {
+    color: #c470db;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten(#c470db, 10%);
+    }
+  }
+}
+
+// Кастомный стиль для кнопок
+.button, .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #c470db;
+    background-color: transparent;
+    color: #c470db;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
+    &:hover {
+      background-color: #c470db;
+      color: white;
+    }
+  }
+  
+
+// Стили для заголовков и текста
+h1, h2, h3, h4, h5, h6 {
+  color: #c470db;
+}
+
+p {
+  line-height: 1.6;
+}

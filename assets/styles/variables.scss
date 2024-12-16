@@ -1,0 +1,7 @@
+// Переопределяем основные цвета Bootstrap
+$primary: #c470db;
+$body-bg: #282c33;
+$navbar-bg: #010409;
+
+// Импорт Bootstrap после изменения переменных
+@import "bootstrap/scss/bootstrap";
