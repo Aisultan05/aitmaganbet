@@ -9,7 +9,12 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": ["node", "nuxt"]
+    "types": ["node", "nuxt", "vue"],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    }
   },
   "include": [
     "nuxt.config.ts",
@@ -18,6 +23,7 @@
     "layouts/**/*.vue",
     "pages/**/*.vue",
     "store/**/*.ts",
-    "composables/**/*.ts"
+    "composables/**/*.ts",
+    "app.vue"
   ]
 }
