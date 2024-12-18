@@ -1,7 +1,7 @@
 <template>
     <section class="container py-5">
      <article>
-      <h2 class="mb-5" style="text-align: left;"><span>/</span><span style="color: white;">my-projects</span></h2>
+      <h2 class="mb-5" style="text-align: left;"><span>#</span><span style="color: white;">my-projects</span></h2>
      </article>    
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-4 mb-4" v-for="project in projects" :key="project.title">

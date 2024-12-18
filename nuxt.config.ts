@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt'
   ],
   css: [
+    'bootstrap/dist/css/bootstrap.min.css',
     '~/assets/styles/main.scss'
   ],
   build: {
