@@ -15,7 +15,7 @@ const user = useUserStore()
 
 <style scoped lang="scss">
 footer {
-  background-color: #010409; /* общий фон */
+  background-color: #0f1624; /* общий фон */
   border-color: #303030;     /* если хотите другую границу */
 }
 </style>

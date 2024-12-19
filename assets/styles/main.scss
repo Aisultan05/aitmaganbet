@@ -1,7 +1,8 @@
 // 1. Настраиваем переменные
-$background-color: #010409;
+$background-color: #0f1624;
 $text-color: #ffffff;
 $accent-color: #c470db;
+
 
 // Bootstrap variables override
 $body-bg: $background-color;
@@ -11,11 +12,12 @@ $body-color: $text-color;
 $theme-colors: (
   "primary": $accent-color,
   "light": #ffffff,
-  "dark": #010409
+  "dark": #0f1624
 );
 
 // 2. Импортируем Bootstrap со своими переопределёнными переменными
 @import "bootstrap/scss/bootstrap";
+
 
 // 3. Глобальные стили для body
 body {
@@ -36,12 +38,7 @@ a {
   }
 }
 
-// 5. Шапка / Header
-header {
-  background-color: $background-color; // #010409
-  color: $text-color;                 // #ffffff
-  border-bottom: 1px solid lighten($background-color, 10%);
-}
+
 
 // 6. Футер
 footer {
