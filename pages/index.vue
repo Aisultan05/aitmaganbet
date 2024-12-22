@@ -3,7 +3,7 @@
     <!-- HOME SECTION -->
     <section id="home">
       <div class="row align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <h3>Hi There!👋</h3>
           <h1 class="display-4 text-white">
             I'm a
@@ -16,7 +16,7 @@
             Contact me &raquo;
           </router-link>
         </div>
-        <div class="col-lg-6 text-center">
+        <div class="col-lg-5 text-center">
           <img
             src="/assets/images/home.png"
             alt="Home illustration"
@@ -30,8 +30,8 @@
     <!-- QUOTE / HIGHLIGHT -->
     <section class="text-center">
       <blockquote class="blockquote fs-4">
-        «With great power comes great electricity bill» <br />
-        <span style="color: #c470db;">— Dr. Who</span>
+        «Программирование — это искусство превращать кофе в код.» <br />
+        <span class="quote">— Эпиграф IT-индустрий</span>
       </blockquote>
     </section>
 
@@ -184,7 +184,7 @@ const user = useUserStore()
 <style scoped lang="scss">
 .section-gap {
   margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 /* Сброс боксовой модели */
@@ -215,5 +215,12 @@ const user = useUserStore()
   margin: 5px 0;
   font-size: 14px;
   color: #d1d1e3; /* Светло-серый текст */
+}
+.quote {
+  color: #c470db; 
+  font-size: 16px; 
+  text-align: right; 
+  display: block; 
+  margin-right: 200px;
 }
 </style>

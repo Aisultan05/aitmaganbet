@@ -1,6 +1,6 @@
 // 1. Настраиваем переменные
 $background-color: #0f1624;
-$text-color: #ffffff;
+$text-color: #dde0e5;
 $accent-color: #c470db;
 
 
@@ -25,6 +25,7 @@ body {
   color: $text-color;
   margin: 0;
   font-family: Arial, sans-serif;
+  padding: 0 150px;
 }
 
 // 4. Ссылки
@@ -44,20 +45,27 @@ a {
 footer {
   background-color: $background-color;
   color: $text-color;
-  padding: 16px 0;
+  padding: 20px 0; /* Увеличен отступ для более просторного футера */
   text-align: center;
-  border-top: 1px solid lighten($background-color, 10%);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Лёгкая тень вместо границы */
 
   a {
     color: $accent-color;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    text-decoration: underline; /* Добавлено подчёркивание для ссылок */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 
     &:hover {
-      color: lighten($accent-color, 10%);
+      color: lighten($accent-color, 15%); /* Сделать цвет ярче при наведении */
+      text-decoration: none; /* Убирается подчёркивание при наведении */
     }
   }
+
+  p {
+    font-size: 0.875rem; /* Немного уменьшен текст для компактности */
+    margin: 0;
+  }
 }
+
 
 // 7. Кастомные кнопки 
 .button, .btn {
